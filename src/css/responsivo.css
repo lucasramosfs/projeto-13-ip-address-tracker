@@ -1,0 +1,144 @@
+@media(max-width: 900px){
+    .header .pesquisa .barra-pesquisa input{
+        font-size: 16px;
+    }
+    .header .lista-resultados{
+        width: 600px;
+    }
+
+    .header .lista-resultados .resultados .resultado:last-child{
+        margin-right: 10px;
+    }
+
+    .header .lista-resultados .resultados .resultado p{
+        font-size: 12px;
+    }
+    .header .lista-resultados .resultados .resultado h2{
+        font-size: 15px;
+    }
+
+}
+
+
+@media(max-width: 600px){
+
+    .header{
+        background: url(../images/pattern-bg-mobile.png)center center no-repeat;
+        background-size: cover;
+
+    }
+    
+    .header .pesquisa .barra-pesquisa input{
+        font-size: 16px;
+        width: 350px;
+    }
+
+    .header .pesquisa .barra-pesquisa #btn-pesquisar{
+        padding: 15px;
+    }
+
+    .header .lista-resultados{
+        width: 400px;
+        height: 250px;
+        top:150px;
+    }
+
+    .header .lista-resultados .resultados{
+        display: grid;
+        grid-template-areas:"ip linha2 location"
+                            "timezone linha3 isp";
+        grid-template-rows: 125px, 125px;
+
+    }
+
+    .ip{
+        grid-area: ip;
+    }
+
+    .location{
+        grid-area: location;
+    }
+
+    .timezone{
+        grid-area: timezone;
+    }
+
+    .isp{
+        grid-area: isp;
+    }
+    .linha{
+        height: 0;
+        width: 0;
+        /* margin-top: 40px; */
+    }
+    .linha.linha2{
+        grid-area: linha2;
+        height: 75px;
+        width: 1px;
+        margin-top: 40px;
+    }
+
+    .linha.linha3{
+        grid-area: linha3;
+        height: 75px;
+        width: 1px;
+        margin-top: 40px;
+    }
+    
+
+    .header .lista-resultados .resultados .resultado{
+        margin-top: 5px;
+    }
+
+    .header .lista-resultados .resultados .resultado:last-child{
+        margin-right: 10px;
+    }
+
+    .header .lista-resultados .resultados .resultado p{
+        font-size: 12px;
+    }
+    .header .lista-resultados .resultados .resultado h2{
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width: 400px){
+
+    .header{
+        background: url(../images/pattern-bg-mobile.png)center center no-repeat;
+        background-size: cover;
+    }
+
+    .header .pesquisa h1{
+        font-size: 25px;
+    }
+    
+    .header .pesquisa .barra-pesquisa input{
+        font-size: 13px;
+        width: 280px;
+    }
+
+    .header .pesquisa .barra-pesquisa #btn-pesquisar{
+        padding: 15px;
+    }
+
+    .header .lista-resultados{
+        width: 300px;
+        height: 250px;
+        top:150px;
+    }
+
+    .header .lista-resultados .resultados .resultado p{
+        font-size: 10px;
+    }
+
+    .header .lista-resultados .resultados .resultado h2{
+        font-size: 12px;
+    }
+    .header .lista-resultados .resultados .resultado #timezone{
+        font-size: 13px;
+        width: 100%;
+    }
+
+}

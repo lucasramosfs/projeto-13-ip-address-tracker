@@ -1,0 +1,123 @@
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-areas:"header"
+                        "mapa"
+                        "mapa"
+                        "mapa";    
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.header{
+    grid-area: header;
+    background: url(../images/pattern-bg-desktop.png)center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.header .pesquisa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.header .pesquisa h1{
+    font-size: 32px;
+    font-weight: 500;
+    word-spacing: -2px;
+    color: #ffffff;
+}
+
+.header .pesquisa .barra-pesquisa{
+    margin-top: 27px;
+    display: flex;
+
+}
+
+.header .pesquisa .barra-pesquisa input{
+    padding: 17px 10px 17px 23px;
+    width: 500px;
+    border-radius: 15px 0 0 15px;
+    font-size: 20px;
+}
+
+.header .pesquisa .barra-pesquisa input:hover{
+    cursor: pointer;
+
+}
+
+.header .pesquisa .barra-pesquisa #btn-pesquisar{
+    padding: 20px 25px ;
+    background-color: #000000;
+    
+    border-radius: 0 15px 15px 0;
+}
+
+.header .pesquisa .barra-pesquisa #btn-pesquisar:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 17%);
+}
+
+
+.header .lista-resultados{
+    background-color: #ffffff;
+    margin-top: 45px ;
+    width: 900px;
+    border-radius: 15px;
+    position: absolute;
+    top: 230px;
+}
+
+.header .lista-resultados .resultados{
+    display: flex;
+    height: 165px;
+    
+    
+    
+}
+
+.header .lista-resultados .resultados .resultado{
+    padding: 20px;
+    width: 25%;
+    margin-top: 15px;
+    margin-left: 12px;
+}
+.header .lista-resultados .resultados .resultado p{
+    color: hsl(0, 0%, 59%);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.header .lista-resultados .resultados .resultado h2{
+    font-weight: 500 ;
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.linha{
+    border: 1px solid hsl(0, 0%, 59%);
+    height: 75px;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+#map{
+    grid-area: mapa;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
